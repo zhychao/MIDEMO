@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<view>
+  <swiper class='swiper-box' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{postData.data.header.body.items}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item.img_url}}" class="slide-image" width="100%" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='sections' wx:for="{{postData.data.sections}}" wx:key="*this" wx:for-index="index" wx:for-item="section">
+  <!-- 商城早报 -->
+  <view wx:if="{{section.view_type=='list_broadcast'}}">
+    <view class='list_broadcast'>
+      <image src="{{section.body.title_logo_url}}" class="" />
+      <swiper class='news_title' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" vertical="true" circular="true">
+        <block wx:for="{{section.body.items}}" wx:key="key" wx:for-item="list_broadcast">
+          <swiper-item>
+            <text class="itme_text">{{list_broadcast.news_title}}</text>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <!-- 商城早报end -->
+  <!-- cells_auto_fill -->
+  <view class="{{section.view_type}}" wx:if="{{section.view_type=='cells_auto_fill'}}">
+    <view style="width:{{section.body.w}}rpx;height:{{section.body.h}}rpx;" class="body">
+      <view class='items' wx:key="*this" wx:for="{{section.body.items}}" wx:for-index="index" wx:for-item="items" style="width:{{items.w}}rpx;height:{{items.h}}rpx;left:{{items.x}}rpx;top:{{items.y}}rpx;}">
+        <image src="{{items.img_url}}" class="slide-image" width="100%" />
+      </view>
+    </view>
+  </view>
+  <!--cells_auto_fill  end-->
+  <view wx:if="{{section.view_type=='divider_line'}}" class="{{section.view_type}}" style="height:{{section.body.line_height}}rpx;background:{{section.body.line_color}}">
+  </view>
+  <!--list_two_type1-->
+  <view class="{{section.view_type}}" wx:if="{{section.view_type=='list_two_type1'}}">
+    <view class="productBox" wx:key="*this" wx:for="{{section.body.items}}" wx:for-index="index" wx:for-item="iterm">
+      <view class="img">
+        <image src="{{iterm.img_url}}" width="100%" />
+      </view>
+      <view class="name">{{iterm.product_name}}</view>
+      <view class="info">{{iterm.product_brief}}</view>
+      <view class="price">
+        <text>￥</text>{{iterm.product_price}}
+      </view>
+    </view>
+  </view>
+   <!--list_one_type9-->
+  <view class="{{section.view_type}}" wx:if="{{section.view_type=='list_two_type1'}}">
+    <view class="productBox" wx:key="*this" wx:for="{{section.body.items}}" wx:for-index="index" wx:for-item="iterm">
+      <view class="img">
+        <image src="{{iterm.img_url}}" width="100%" />
+      </view>
+      <view class="name">{{iterm.product_name}}</view>
+      <view class="info">{{iterm.product_brief}}</view>
+      <view class="price">
+        <text>￥</text>{{iterm.product_price}}
+      </view>
+    </view>
+  </view>
+</view>

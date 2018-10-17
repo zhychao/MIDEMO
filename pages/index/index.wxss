@@ -1,0 +1,126 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200rpx;
+}
+
+.swiper-box {
+  height: 480rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height:100%;
+}
+
+.sections {
+  width: 750rpx;
+}
+
+.sections .list_broadcast {
+  height: 80rpx;
+  overflow: hidden;
+}
+
+.sections .list_broadcast image {
+  float: left;
+  width: 150rpx;
+  height: 80rpx;
+}
+
+.sections .list_broadcast text {
+  float: left;
+  width: 80%;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: -8rpx;
+  font-size: 24rpx;
+}
+.news_title{
+  width:80%;
+height:68rpx;
+pointer-events:none;
+cursor:default;
+float:left;
+line-height:68rpx;
+margin-top:13rpx;
+
+}
+.cells_auto_fill .body{position: relative}
+.cells_auto_fill .body .items{position: absolute}
+.list_two_type1 {
+    display: flex;
+    display: -webkit-flex;
+}
+.list_two_type1 .productBox {
+    flex: 1;
+    padding: 5rpx 5rpx 15rpx;
+    width: 50%;
+}
+.list_two_type1 .productBox .img image {
+    width: 100%;
+    height: 360rpx;
+}
+.list_two_type1 .productBox .name {
+    padding: 15rpx 5rpx 5rpx 10rpx;
+    font-size: 28rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333333;
+}
+.list_two_type1 .productBox .info {
+    padding: 5rpx 10rpx 5rpx 10rpx;
+    color: #999;
+    line-height: 1;
+    font-size: 24rpx;
+}
+.list_two_type1 .productBox .price {
+    color: #ff6000;
+    font-size: 38rpx;
+    position: relative;
+    padding-left:5rpx;
+}
+.list_one_type2 .productBox .img image{
+  width: 100%;
+}
+
+.list_one_type2 .productBox .name {
+    padding: 15rpx 5rpx 5rpx 10rpx;
+    font-size: 28rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333333;
+}
+.list_one_type2 .productBox .info {
+    padding: 5rpx 10rpx 5rpx 10rpx;
+    color: #999;
+    line-height: 1;
+    font-size: 24rpx;
+}
+.list_one_type2 .productBox .price {
+    color: #ff6000;
+    font-size: 38rpx;
+    position: relative;
+    padding-left:5rpx;
+}
