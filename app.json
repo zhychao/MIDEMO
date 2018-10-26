@@ -1,12 +1,45 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/category/category",
+    "pages/shopCar/shopCar",
+    "pages/user/user"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "小米demo",
     "navigationBarTextStyle":"black"
-  }
-}
+  
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#FF5722",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/icon-home_2.png",
+        "iconPath": "images/icon-home_1.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/icon-category_2.png",
+        "iconPath": "images/icon-category_1.png",
+        "pagePath": "pages/category/category",
+        "text": "分类"
+      },
+      {
+        "selectedIconPath": "images/icon-cart_2.png",
+        "iconPath": "images/icon-cart_1.png",
+          "pagePath": "pages/shopCar/shopCar",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "images/icon-user_2.png",
+        "iconPath": "images/icon-user_1.png",
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+}}

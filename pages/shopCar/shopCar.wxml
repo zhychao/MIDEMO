@@ -1,0 +1,32 @@
+<!--logs.wxml-->
+<view class="container sections">
+  <view class="cartLogin">
+    <view class='a'>
+      登陆后享受更多优惠
+      <text>去登陆</text>
+    </view>
+  </view>
+  <view class="cartList">
+    <view class="a">
+      <image class="i" src="../../images/icon-cart_1.png"/>
+      购物车还是空的
+      <text class="span">去逛逛</text>
+    </view>
+  </view>
+  <view class="recomList">
+    <view class="recordTitle">为你推荐</view>
+    <view class="ul">
+     
+      <view class='li' wx:for="{{shopCarData.data.recom_list}}" wx:key="*this" wx:for-index="index" wx:for-item="recom_list">
+        <view class='a'>
+             <image src="{{recom_list.image_url}}" class="slide-image" width="100%" />
+          <view class="itermIfo">
+            <view class='p'>{{recom_list.name}}</view>
+            <view class='p'>
+              <text class='span'>￥</text>{{recom_list.price}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

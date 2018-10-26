@@ -1,0 +1,40 @@
+<!--logs.wxml-->
+<view class="container sections">
+  <view class="mi-nav-classify">
+    <view class='ul'>
+      <block wx:for="{{categoryData.data}}" wx:key="*this" wx:for-index="index" wx:for-item="section">
+        <text wx:if="{{section.view_type=='category_title'}}">{{section.body.category_name}}</text>
+      </block>
+    </view>
+  </view>
+  <block wx:for="{{categoryData.data}}" wx:key="*this" wx:for-index="index" wx:for-item="section">
+    <view class="{{section.view_type}}" wx:if="{{section.view_type=='category_title'}}">
+      <view class="category-list-name">
+        <view style="background: #eee;height: 15px;"></view>
+        <text>{{section.body.category_name}}</text>
+      </view>
+    </view>
+    <!-- 分类 -->
+    <view class="{{section.view_type}}" wx:if="{{section.view_type=='category_group'}}">
+      <view class="category-list-box">
+        <view class="a" wx:for="{{section.body.items}}" wx:key="*this" wx:for-index="index" wx:for-item="categoryList">
+          <image src="{{categoryList.img_url}}" class="" />
+          <text class='p'>{{categoryList.product_name}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 大屏图 -->
+    <view class="{{section.view_type}}" wx:if="{{section.view_type=='cells_auto_fill'}}">
+      <view class="body" style="width:{{section.body.w}}px;height:{{section.body.h}}rpx;">
+        <block wx:for="{{section.body.items}}" wx:key="*this" wx:for-index="index" wx:for-item="items">
+          <view class="iterms" style="width:{{items.w}}rpx;height:{{items.h}}rpx;left:{{items.x}}rpx;top:{{items.y}}rpx;}">
+            <view class='a'>
+               <image src="{{items.img_url}}" class="" />
+              <!-- <image src="{{items.img_url}}" style="width:{{items.w}}rpx;height:{{items.h}}rpx;}"> -->
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>

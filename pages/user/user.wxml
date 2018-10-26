@@ -1,0 +1,85 @@
+<view class="user-hd">
+  <view class="mi-user">
+    <view class='span'>
+      <image class="i" src="../../images/avatar.png" />
+    </view>
+    <text>注册/登录</text>
+  </view>
+</view>
+<view class="weui-cells orders ad">
+  <view class="weui-cell weui-cell_access a2">
+    <view class="weui-cell__bd">
+      <view>全部订单 </view>
+    </view>
+  <view class="right">
+      <image src="../../images/right_ico.png" />
+    </view>
+  </view>
+</view>
+<view class="weui-grids personal-center">
+  <view class="weui-grid js_grid">
+    <view class="weui-grid__icon">
+      <image src="../../images/nav-1.png" />
+    </view>
+    <view class="weui-grid__label">代付款 </view>
+  </view>
+  <view class="weui-grid js_grid">
+    <view class="weui-grid__icon">
+      <image src="../../images/nav-1.png" />
+    </view>
+    <view class="weui-grid__label">待收款 </view>
+  </view>
+  <view class="weui-grid js_grid">
+    <view class="weui-grid__icon">
+      <image src="../../images/nav-4.png" />
+    </view>
+    <view class="weui-grid__label">退换修 </view>
+  </view>
+</view>
+<view class="weui-cells orders" style='padding:0;margin-top:25rpx;'>
+  <view class="weui-cell weui-cell_access a1">
+    <view class="weui-cell__hd">
+      <image src="../../images/i-wallet.png" />
+    </view>
+    <view class="weui-cell__bd">
+      <view>我的优惠</view>
+    </view>
+    <view class="right">
+      <image src="../../images/right_ico.png" />
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_access a1">
+    <view class="weui-cell__hd">
+      <image src="../../images/i-service.png" />
+    </view>
+    <view class="weui-cell__bd">
+      <view>服务中心</view>
+    </view>
+  <view class="right">
+      <image src="../../images/right_ico.png" />
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_access a1">
+    <view class="weui-cell__hd">
+      <image src="../../images/i-mihome.png" />
+    </view>
+    <view class="weui-cell__bd">
+      <view>小米之家</view>
+    </view>
+    <view class="right">
+      <image src="../../images/right_ico.png" />
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_access a1">
+    <view class="weui-cell__hd">
+      <image src="../../images/i-setting.png" />
+    </view>
+    <view class="weui-cell__bd">
+      <view>设置</view>
+    </view>
+    <!-- <image src="../../images/right_ico.png" /> -->
+    <view class="right">
+      <image src="../../images/right_ico.png" />
+    </view>
+  </view>
+</view>

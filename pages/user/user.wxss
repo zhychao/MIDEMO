@@ -1,0 +1,123 @@
+.user-hd {
+    background: url("https://m.mi.com/static/img/bg.63c8e19851.png") center #F37D0F;
+    background-size: auto 100%;
+}
+.user-hd .mi-user {
+    font-size: 28rpx;
+    padding: 25rpx;
+}
+.user-hd .mi-user .span {
+    display: inline-block;
+    text-align: center;
+}
+.user-hd .mi-user .span image {
+    vertical-align: middle;
+    width: 88rpx;
+    height: 88rpx
+}
+.user-hd .mi-user text {
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 15rpx;
+}
+.orders {
+    padding: 10rpx;
+    font-size: 28rpx;
+    color: #333;
+    overflow: hidden;
+    position: relative;
+}
+.orders .a2 {
+    padding: 15rpx 0rpx;
+}
+
+.weui-cell_access {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: inherit;
+}
+.personal-center {
+    background: #fff;
+    border-top: solid 1px #ddd;
+    padding: 30rpx 0rpx;
+}
+
+.weui-grids {
+    position: relative;
+    overflow: hidden;
+}
+.weui-grid {
+    position: relative;
+    float: left;
+    padding: 20rpx 10rpx;
+    width: 33.33333333%;
+    box-sizing: border-box;
+     border-right: 1px solid #d9d9d9;
+}
+.personal-center .weui-grid__icon {
+    width: 50rpx;
+    height: 50rpx;
+        margin: 0 auto;
+}
+.weui-grid__icon image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.personal-center .weui-grid__label {
+    font-size: 28rpx;
+}
+.weui-grid__icon+.weui-grid__label {
+    margin-top: 5rpx;
+}
+.weui-footer, .weui-grid__label {
+    text-align: center;
+    font-size: 14rpx;
+}
+.weui-grid__label {
+    display: block;
+    color: #000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.orders .a1 {
+    margin-top: 8rpx;
+    background: #fff;
+}
+.weui-cell__hd image {
+    width: 50rpx;
+    height: 50rpx;
+    padding: 15rpx;
+     display: block;
+    margin-right: 5rpx;
+}
+.orders .a1 {
+    margin-top: 8rpx;
+    background: #fff;
+}
+
+.weui-cell_access {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: inherit;
+}
+.weui-cell {
+    padding: 10rpx 15rpx;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.weui-cell__bd {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.ad {
+    margin-top: 0;
+    background: #fff;
+}
+.orders .right{display: inline-block;width: 32rpx;height: 32rpx;}
+.orders .right image{width: 32rpx;height: 32rpx;}

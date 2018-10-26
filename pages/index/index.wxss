@@ -37,6 +37,7 @@
 .sections .list_broadcast {
   height: 80rpx;
   overflow: hidden;
+  background: #fff;
 }
 
 .sections .list_broadcast image {
@@ -62,7 +63,7 @@ pointer-events:none;
 cursor:default;
 float:left;
 line-height:68rpx;
-margin-top:13rpx;
+margin-top:16rpx;
 
 }
 .cells_auto_fill .body{position: relative}
@@ -123,4 +124,161 @@ margin-top:13rpx;
     font-size: 38rpx;
     position: relative;
     padding-left:5rpx;
+}
+ .mi-list-type {
+   width: 100%;
+   display: flex;
+}
+.mi-list-type .type-Box {
+   width: 50%;
+   flex: 1;
+   height: 360rpx
+  
+}
+.mi-list-type .type-Box .product_name {
+    padding:30rpx 25rpx 0;
+    font-size: 30rpx;
+    color: #000;
+}
+.mi-list-type .type-Box .product_brief {
+    padding: 25rpx 25rpx 30rpx;
+    line-height: 1.5;
+    font-size: 24rpx;
+    color: #999;
+}
+.mi-list-type .type-Box .product_price {
+    padding: 5rpx 45rpx 0;
+    font-size: 38rpx;
+    position: relative;
+    color: #ff6000;
+}
+.type-Box image{width: 100%;height: 100%;}
+.list_two_type .iterms10 {
+   width: 100%;
+   display:flex;
+}
+.list_two_type .iterms10 .a:nth-of-type(1) {
+  flex: 3;
+   
+}
+.list_two_type .iterms10 .a:nth-of-type(2) {
+  flex: 2;
+  
+}
+.list_two_type .iterms10 .a image {
+    width: 100%;
+    height: 290rpx
+}
+.list_two_type .iterms10 .a .product_name {
+    padding: 15rpx 20rpx 10rpx;
+    color: #333;
+    font-size: 28rpx;
+}
+.list_two_type .iterms10 .a .product_price {
+    color: #ff6000;
+    position: relative;
+    font-size: 38rpx;
+    padding: 0rpx 15rpx 10rpx;
+}
+.list_two_type12 {
+    display: flex;
+    overflow: hidden;
+}
+.list_two_type12 .productBox {
+  width: 50%;
+    flex: 1;
+}
+.list_two_type12 .productBox .a .img image {
+    width: 100%;
+    height: 250rpx
+}
+.list_two_type12 .productBox .a .name {
+    padding: 10rpx 20rpx 8rpx;
+    color: #333;
+    font-size: 28rpx;
+}
+.list_two_type12 .productBox .a .price {
+    color: #ff6000;
+    position: relative;
+    font-size: 38rpx;
+    padding: 0rpx 45rpx 15rpx;
+}
+.list_two_type12 .productBox .a .price span {
+    position: absolute;
+    top: 10rpx;
+    left: 22rpx;
+    font-size: 25rpx;
+}
+.list_two_type-com .iterms10 {
+    display: flex;
+}
+.list_two_type-com .iterms10 .a:nth-of-type(1) {
+    flex: 2;
+}
+
+.list_two_type-com .iterms10 .a:nth-of-type(2) {
+    flex: 3;
+}
+.list_two_type-com .iterms10 .a image {
+    width: 100%;
+     height: 250rpx
+}
+.list_two_type-com .iterms10 .a .product_name {
+    padding: 15rpx 20rpx 5rpx;
+    color: #333;
+    font-size: 28rpx;
+}
+.list_two_type-com .iterms10 .a .product_price {
+    color: #ff6000;
+    position: relative;
+    font-size: 38rpx;
+    padding: 5rpx 45rpx 10rpx;
+}
+.list_two_type-com .iterms10 .a .product_price span {
+    position: absolute;
+    top: 10rpx;
+    left: 22rpx;
+    font-size: 25rpx;
+}
+.list-type .iterms10 {
+    padding: 0rpx 0rpx 15rpx;
+}
+.list-type .iterms10 image {
+    width: 100%;
+}
+.list-type .iterms10 .product_name {
+    font-size: 30rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333333;
+    padding: 15rpx 15rpx 5rpx;
+}
+.list-type .iterms10 .product_price {
+    color: #ff6000;
+    font-size: 36rpx;
+    position: relative;
+    padding-left: 30rpx;
+    display: inline-block;
+    float: right;
+    right: 20rpx;
+}
+.list-type .iterms10 .product_price text {
+    position: absolute;
+    top: 8rpx;
+    left: 7rpx;
+    font-size: 22rpx;
+}
+.list-type .iterms10 .product_brief {
+    font-size: 26rpx;
+    color: #999;
+    padding: 0rpx 15rpx 15rpx 15rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.list_action_title {
+    text-align: center;
+    padding: 20rpx;
+    font-size: 28rpx;
 }

@@ -47,17 +47,96 @@
       </view>
     </view>
   </view>
-   <!--list_one_type9-->
-  <view class="{{section.view_type}}" wx:if="{{section.view_type=='list_two_type1'}}">
+  <view class="{{section.view_type}}" wx:if="{{section.view_type=='list_one_type2'}}" wx:key="*this" wx:for="{{section.body.items}}" wx:for-index="index" wx:for-item="list_one_type2">
+    <view class="mi-list-type">
+      <view class="type-Box">
+        <image src="{{list_one_type2.img_url}}" width="100%" />
+      </view>
+      <view class="type-Box">
+        <view class="product_name">{{list_one_type2.product_name}}</view>
+        <view class="product_brief">{{list_one_type2.product_brief}}</view>
+        <view class="product_price">
+          <span>￥</span>{{list_one_type2.product_price}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- list_one_type3 -->
+  <view class="{{section.view_type}}" wx:if="{{section.view_type=='list_one_type3'}}" wx:key="*this" wx:for="{{section.body.items}}" wx:for-index="index" wx:for-item="list_one_type3">
+    <view class="mi-list-type">
+      <view class="type-Box">
+        <view class="product_name">{{list_one_type3.product_name}}</view>
+        <view class="product_brief">{{list_one_type3.product_brief}}</view>
+        <view class="product_price">
+          <span>￥</span>{{list_one_type3.product_price}}
+        </view>
+      </view>
+      <view class="type-Box">
+        <image src="http://i8.mifile.cn/v1/a1/fd88c85e-d74f-1002-61d0-e001fbb02cf6.webp" width="100%" />
+      </view>
+    </view>
+  </view>
+  <!-- list_one_type3 end-->
+  <view class="{{section.view_type}} list_two_type" wx:if="{{section.view_type=='list_two_type3'||section.view_type=='list_two_type10'}}">
+    <view class="iterms10">
+      <view class='a' wx:key="*this" wx:for="{{section.body.items}}" wx:for-index="index" wx:for-item="iterm">
+        <view class="iterm-img">
+          <image src="{{iterm.img_url}}" width="100%" />
+        </view>
+        <view class="product_name">{{iterm.product_name}}</view>
+        <view class="product_price">
+          <span>￥</span>{{iterm.product_price}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--  -->
+  <view class="{{section.view_type}}" wx:if="{{section.view_type=='list_two_type12'}}">
     <view class="productBox" wx:key="*this" wx:for="{{section.body.items}}" wx:for-index="index" wx:for-item="iterm">
-      <view class="img">
-        <image src="{{iterm.img_url}}" width="100%" />
+      <view class='a'>
+        <view class="img">
+          <image src="{{iterm.img_url}}" width="100%" />
+        </view>
+        <view class="name">{{iterm.product_name}}</view>
+        <view class="price">
+          <span>￥</span>{{iterm.product_price}}</view>
       </view>
-      <view class="name">{{iterm.product_name}}</view>
-      <view class="info">{{iterm.product_brief}}</view>
-      <view class="price">
-        <text>￥</text>{{iterm.product_price}}
+    </view>
+  </view>
+  <!--  -->
+
+  <view class="{{section.view_type}} list_two_type-com" wx:if="{{section.view_type=='list_two_type11' || section.view_type=='list_two_type2'}}">
+    <view class="iterms10">
+      <view class='a' wx:key="*this" wx:for="{{section.body.items}}" wx:for-index="index" wx:for-item="iterm">
+        <view class="iterm-img">
+          <image src="{{iterm.img_url}}" width="100%" />
+        </view>
+        <view class="product_name">{{iterm.product_name}}</view>
+        <view class="product_price">
+          <span>￥</span>{{iterm.product_price}}</view>
       </view>
+    </view>
+  </view>
+  <!--  -->
+  <view class="list-type {{section.view_type}}" wx:if="{{ section.view_type=='list_one_type1' || section.view_type=='list_one_type9' || section.view_type=='list_one_type12' || section.view_type=='list_two_type5' }}">
+    <view class="iterms10">
+
+      <view class='a' wx:key="*this" wx:for="{{section.body.items}}" wx:for-index="index" wx:for-item="iterm">
+        <view class="iterm-img">
+          <image src="{{iterm.img_url}}" width="100%" />
+        </view>
+        <view class="product_name">
+          {{iterm.product_name}}
+          <view class="product_price">
+            <text>￥</text>{{iterm.product_price}}</view>
+        </view>
+        <view class="product_brief">{{iterm.product_brief}}</view>
+      </view>
+    </view>
+  </view>
+  <!--  -->
+  <view class="{{section.view_type}}" wx:if="{{ section.view_type=='list_action_title'}}">
+    <view class="category-list-name" wx:key="*this" wx:for="{{section.body.items}}" wx:for-index="index" wx:for-item="listTitle">
+      <text>{{listTitle.action_title}}>></text>
     </view>
   </view>
 </view>
